@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en-GB" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Destination chain token support: what happens to your crypto</title>
+<meta name="description" content="A bridge transfer can fail when the destination chain has no matching token. Learn what happens, how routes handle it, and what to check before you send.">
+<link rel="canonical" href="https://dailydefinews.github.io/what-happens-when-a-destination-chain-does-not-support-your-token/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#eef2f8">
+<meta name="author" content="Onchain Report Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Onchain Report">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="What Happens When a Destination Chain Does Not Support Your Token">
+<meta property="og:description" content="A bridge transfer can fail when the destination chain has no matching token. Learn what happens, how routes handle it, and what to check before you send.">
+<meta property="og:url" content="https://dailydefinews.github.io/what-happens-when-a-destination-chain-does-not-support-your-token/">
+<meta property="og:image" content="https://dailydefinews.github.io/assets/covers/what-happens-when-a-destination-chain-does-not-support-your-token-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="What Happens When a Destination Chain Does Not Support Your Token"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What Happens When a Destination Chain Does Not Support Your Token">
+<meta name="twitter:description" content="A bridge transfer can fail when the destination chain has no matching token. Learn what happens, how routes handle it, and what to check before you send.">
+<meta property="article:published_time" content="2026-10-04T07:58:13+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&amp;family=Public+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s6b5a710feb.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Onchain Report" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dailydefinews.github.io/#org",
+      "name": "Onchain Report",
+      "url": "https://dailydefinews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailydefinews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailydefinews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailydefinews.github.io/#website",
+      "name": "Onchain Report",
+      "url": "https://dailydefinews.github.io/",
+      "publisher": {
+        "@id": "https://dailydefinews.github.io/#org"
+      },
+      "inLanguage": "en-GB",
+      "description": "Crypto news on Bitcoin, Ethereum, DeFi, stablecoins, exchanges, regulation, security incidents and network upgrades across the blockchain industry."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dailydefinews.github.io/what-happens-when-a-destination-chain-does-not-support-your-token/#webpage",
+      "url": "https://dailydefinews.github.io/what-happens-when-a-destination-chain-does-not-support-your-token/",
+      "name": "Destination chain token support: what happens to your crypto",
+      "isPartOf": {
+        "@id": "https://dailydefinews.github.io/#website"
+      },
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailydefinews.github.io/what-happens-when-a-destination-chain-does-not-support-your-token/#article",
+      "headline": "What Happens When a Destination Chain Does Not Support Your Token",
+      "isAccessibleForFree": true,
+      "description": "A bridge transfer can fail when the destination chain has no matching token. Learn what happens, how routes handle it, and what to check before you send.",
+      "datePublished": "2026-10-04T07:58:13+00:00",
+      "dateModified": "2026-10-04T07:58:13+00:00",
+      "url": "https://dailydefinews.github.io/what-happens-when-a-destination-chain-does-not-support-your-token/",
+      "mainEntityOfPage": {
+        "@id": "https://dailydefinews.github.io/what-happens-when-a-destination-chain-does-not-support-your-token/#webpage"
+      },
+      "inLanguage": "en-GB",
+      "author": {
+        "@id": "https://dailydefinews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailydefinews.github.io/#org"
+      },
+      "wordCount": 482,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailydefinews.github.io/assets/covers/what-happens-when-a-destination-chain-does-not-support-your-token-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailydefinews.github.io/assets/covers/what-happens-when-a-destination-chain-does-not-support-your-token-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailydefinews.github.io/assets/covers/what-happens-when-a-destination-chain-does-not-support-your-token-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailydefinews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "What Happens When a Destination Chain Does Not Support Your Token",
+          "item": "https://dailydefinews.github.io/what-happens-when-a-destination-chain-does-not-support-your-token/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s0789f53" href="#main">Jump to content</a>
+<header class="s2f1f307">
+  <div class="s0d7ea57 sf25d9ba">
+    <a class="s05af5c4" href="/">Onchain Report</a>
+    <p class="s0368f98">Crypto news from every chain</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="s0d7ea57 s535bc5a">
+  <article class="s59e3d17">
+    <header class="s3960882">
+      <h1 class="s10ee023">What Happens When a Destination Chain Does Not Support Your Token</h1>
+<p class="s041fe79">A bridge transfer can fail when the destination chain has no matching token. Learn what happens, how routes handle it, and what to check before you send.</p>      <p class="sc97e52d s4546892"><span class="s7f903eb">Onchain Report Newsroom</span><time datetime="2026-10-04T07:58:13+00:00">Oct 4, 2026</time><span class="s28327f4">#a14c05</span><span>3 min read</span></p>
+    </header>
+    <figure class="s93e51ec">
+      <img fetchpriority="high" class="sd914c85" src="/assets/covers/what-happens-when-a-destination-chain-does-not-support-your-token.jpg" alt="What Happens When a Destination Chain Does Not Support Your Token">
+    </figure>
+    <div class="s92c11ae"><p>A destination chain that does not support your token may reject the transfer, or the bridge may deliver a different token representation. The result depends on the route: some bridges move a token that already exists on both chains, while others issue a wrapped token, a version backed by the asset on another chain. Knowing which outcome to expect helps you check that you can use what arrives.</p>
+
+<h2>What does it mean for a chain not to support a token?</h2>
+<p>It means the destination chain has no token contract for that asset in the form the route expects. A token is recorded by a contract on its chain, so a token with the same name on another chain is not automatically the same asset. For example, USDC on one chain and a token called USDC on another can have different issuers and redemption rules.</p>
+<p>A bridge route needs a way to represent value on the destination. It might release tokens held there, mint a wrapped version, or swap the source token for another asset. If none of those options is available for your chosen route, the transfer may not be offered or may fail. For more on how routes differ, see this guide to the <a href="https://aboutcryptotalks.gitbook.io/aboutcrypto/bungee-bridge-which-route-fits-your-wallet-transfer" rel="noopener">bungee bridge</a>. The route’s support details are the key; a token’s familiar name alone is not enough.</p>
+
+<h2>What can arrive on the destination chain?</h2>
+<p>You may receive the same asset in a chain-specific form, a wrapped token, or a different token after a swap. Each has a trade-off. A wrapped version can make an asset usable where its original contract is absent, but its value depends on how it is backed and whether it can be redeemed. A swap can save you an extra step, but the final asset may not be the one you started with.</p>
+<p>Before sending, check:</p>
+<ul>
+<li>The destination chain and the exact token contract address.</li>
+<li>The asset the route says you will receive, including any swap.</li>
+<li>Whether your wallet or the app you plan to use accepts that token.</li>
+<li>The route’s fee, estimated amount, and what happens if it fails.</li>
+</ul>
+
+<h2>What should you do if your token is unsupported?</h2>
+<p>Choose a route that names the asset you want on the destination chain. If none does, swap on the source chain into an asset the route supports, or send to a chain where your token is available. Compare the amount after fees, not just the transfer fee: a conversion can change how much arrives.</p>
+<p>If a transfer has already completed but the token is not visible, first check the destination chain in your wallet and look up the transaction there. The token may need to be added by its contract address. Only use an address from a reliable source for that exact chain. If the transaction failed or remains pending, follow the bridge’s stated recovery steps rather than sending the same transfer again.</p></div>
+  </article>
+  <aside class="sd485350" aria-labelledby="related-head">
+    <div class="sb6706cb">
+      <h2 class="s59dbe52" id="related-head">Related stories</h2>
+      <ul class="s14292bf">
+        <li class="scee9363"><a class="sfa1701d" href="/why-usdt-payouts-on-tron-need-an-energy-budget/">Why USDT Payouts on TRON Need an Energy Budget</a></li>
+        <li class="scee9363"><a class="sfa1701d" href="/sec-proposes-conditional-crypto-custody-rules-for-advisers-and-funds/">SEC proposes conditional crypto custody rules for advisers and funds</a></li>
+        <li class="scee9363"><a class="sfa1701d" href="/icba-sues-occ-over-crypto-trust-bank-charter-rules/">ICBA sues OCC over crypto trust bank charter rules</a></li>
+        <li class="scee9363"><a class="sfa1701d" href="/how-long-does-a-polygon-pos-withdrawal-stay-pending/">How Long Does a Polygon PoS Withdrawal Stay Pending?</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+</main>
+
+<footer class="sc0e772d">
+  <div class="s0d7ea57 sd2a4f99">
+    <p class="s3611218">Onchain Report</p>
+    <nav class="sf5cde87" aria-label="Site">
+      <ul>
+<li><a href="/">Front page</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy policy</a></li><li><a href="/archive/">All articles</a></li>      </ul>
+    </nav>
+    <p class="s27ddc34">An independent outlet. Nothing here is financial advice.</p>
+    <p class="s6c834f8">© 2026 Onchain Report</p>
+  </div>
+</footer>
+</body>
+</html>
