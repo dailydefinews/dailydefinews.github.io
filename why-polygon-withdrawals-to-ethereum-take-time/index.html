@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en-GB" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polygon Bridge withdrawals: how the wait works</title>
+<meta name="description" content="Polygon PoS withdrawals burn tokens on Polygon, wait for a validator checkpoint on Ethereum, then need a final claim transaction before funds reach your wallet.">
+<link rel="canonical" href="https://dailydefinews.github.io/why-polygon-withdrawals-to-ethereum-take-time/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#eef2f8">
+<meta name="author" content="Onchain Report Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Onchain Report">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Why Polygon withdrawals to Ethereum take time">
+<meta property="og:description" content="Polygon PoS withdrawals burn tokens on Polygon, wait for a validator checkpoint on Ethereum, then need a final claim transaction before funds reach your wallet.">
+<meta property="og:url" content="https://dailydefinews.github.io/why-polygon-withdrawals-to-ethereum-take-time/">
+<meta property="og:image" content="https://dailydefinews.github.io/assets/covers/why-polygon-withdrawals-to-ethereum-take-time-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why Polygon withdrawals to Ethereum take time"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why Polygon withdrawals to Ethereum take time">
+<meta name="twitter:description" content="Polygon PoS withdrawals burn tokens on Polygon, wait for a validator checkpoint on Ethereum, then need a final claim transaction before funds reach your wallet.">
+<meta property="article:published_time" content="2026-10-22T04:20:52+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&amp;family=Public+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s6b5a710feb.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Onchain Report" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dailydefinews.github.io/#org",
+      "name": "Onchain Report",
+      "url": "https://dailydefinews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailydefinews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailydefinews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://dailydefinews.github.io/editorial-standards/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailydefinews.github.io/#website",
+      "name": "Onchain Report",
+      "url": "https://dailydefinews.github.io/",
+      "publisher": {
+        "@id": "https://dailydefinews.github.io/#org"
+      },
+      "inLanguage": "en-GB",
+      "description": "Crypto news on Bitcoin, Ethereum, DeFi, stablecoins, exchanges, regulation, security incidents and network upgrades across the blockchain industry."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dailydefinews.github.io/why-polygon-withdrawals-to-ethereum-take-time/#webpage",
+      "url": "https://dailydefinews.github.io/why-polygon-withdrawals-to-ethereum-take-time/",
+      "name": "Polygon Bridge withdrawals: how the wait works",
+      "isPartOf": {
+        "@id": "https://dailydefinews.github.io/#website"
+      },
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailydefinews.github.io/why-polygon-withdrawals-to-ethereum-take-time/#article",
+      "headline": "Why Polygon withdrawals to Ethereum take time",
+      "isAccessibleForFree": true,
+      "description": "Polygon PoS withdrawals burn tokens on Polygon, wait for a validator checkpoint on Ethereum, then need a final claim transaction before funds reach your wallet.",
+      "datePublished": "2026-10-22T04:20:52+00:00",
+      "dateModified": "2026-10-22T04:20:52+00:00",
+      "url": "https://dailydefinews.github.io/why-polygon-withdrawals-to-ethereum-take-time/",
+      "mainEntityOfPage": {
+        "@id": "https://dailydefinews.github.io/why-polygon-withdrawals-to-ethereum-take-time/#webpage"
+      },
+      "inLanguage": "en-GB",
+      "author": {
+        "@id": "https://dailydefinews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailydefinews.github.io/#org"
+      },
+      "wordCount": 482,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailydefinews.github.io/assets/covers/why-polygon-withdrawals-to-ethereum-take-time-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailydefinews.github.io/assets/covers/why-polygon-withdrawals-to-ethereum-take-time-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailydefinews.github.io/assets/covers/why-polygon-withdrawals-to-ethereum-take-time-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailydefinews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why Polygon withdrawals to Ethereum take time",
+          "item": "https://dailydefinews.github.io/why-polygon-withdrawals-to-ethereum-take-time/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s0789f53" href="#main">Jump to content</a>
+<header class="s2f1f307">
+  <div class="s0d7ea57 sf25d9ba">
+    <a class="s05af5c4" href="/">Onchain Report</a>
+    <p class="s0368f98">Crypto news from every chain</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="s0d7ea57 s535bc5a">
+  <article class="s59e3d17">
+    <header class="s3960882">
+      <h1 class="s10ee023">Why Polygon withdrawals to Ethereum take time</h1>
+<p class="s041fe79">Polygon PoS withdrawals burn tokens on Polygon, wait for a validator checkpoint on Ethereum, then need a final claim transaction before funds reach your wallet.</p>      <p class="sc97e52d s4546892"><span class="s7f903eb">Onchain Report Newsroom</span><time datetime="2026-10-22T04:20:52+00:00">Oct 22, 2026 · 04:20 UTC</time><span class="s28327f4">#14fb42</span><span>3 min read</span></p>
+    </header>
+    <figure class="s93e51ec">
+      <img width="1200" height="630" fetchpriority="high" class="sd914c85" src="/assets/covers/why-polygon-withdrawals-to-ethereum-take-time.jpg" alt="Why Polygon withdrawals to Ethereum take time">
+    </figure>
+    <div class="s92c11ae"><p>A Polygon PoS withdrawal takes time because the bridge first records a token burn on Polygon, then waits for validators to post a checkpoint to Ethereum before you can claim the tokens there. That delay gives Ethereum a way to verify the withdrawal happened on Polygon.</p>
+
+<p>This is the process for the Polygon PoS Bridge. Other Polygon networks can use different withdrawal steps and waiting periods. A <a href="https://dev.to/defitalks/polygon-bridge-how-to-move-tokens-and-know-what-to-expect-25kd" rel="noopener">guide to moving tokens with Polygon Bridge</a> covers the broader process; here, the key detail is why a PoS withdrawal has two parts.</p>
+
+<h2>What happens when you start a withdrawal?</h2>
+
+<p>Starting a withdrawal burns the bridged tokens on Polygon. “Burn” means the tokens are removed from circulation on that network. The tokens do not appear on Ethereum right away: the bridge needs evidence of the burn before it can release the matching assets there.</p>
+
+<p>Keep the withdrawal transaction in your wallet or bridge history. It is the record you will use to track the transfer and, if needed, find the claim step later. Starting the withdrawal is not the same as finishing it.</p>
+
+<h2>Why does the bridge wait for a checkpoint?</h2>
+
+<p>Validators group Polygon activity into checkpoints and submit them to Ethereum. A checkpoint is a record of Polygon blocks that Ethereum can use to check the withdrawal. The burn must be included in one before the bridge can build the proof needed to release the tokens.</p>
+
+<p>This is a security step, not a timer that runs for the same fixed length every time. The wait depends on when the relevant checkpoint is submitted and confirmed. Ethereum congestion can slow checkpoint submissions, so an estimate is not a promise.</p>
+
+<h2>How do you finish the withdrawal?</h2>
+
+<p>After the checkpoint is available, return to the bridge and complete the claim on Ethereum. The bridge supplies a proof that the burn was included in the checkpoint. Ethereum checks that proof, then releases the corresponding tokens to your address.</p>
+
+<p>In practice, the withdrawal has three parts:</p>
+
+<ul>
+  <li>Submit the burn transaction on Polygon.</li>
+  <li>Wait for a checkpoint that includes it to reach Ethereum.</li>
+  <li>Submit the claim transaction on Ethereum.</li>
+</ul>
+
+<p>The last step needs a wallet transaction on Ethereum, so you need enough ETH there to pay its network fee. If you close the bridge page while waiting, check the bridge’s withdrawal status again after the checkpoint arrives. The transfer may still need your claim.</p>
+
+<h2>Is the wait worth it?</h2>
+
+<p>For a direct withdrawal through the PoS bridge, the trade-off is a verifiable route back to Ethereum that takes longer than the initial burn transaction. The bridge does not release the Ethereum-side tokens until it can verify the Polygon-side event.</p>
+
+<p>Before starting, check that the asset and destination address are right, and make sure you can cover the Ethereum claim fee. Once the burn is submitted, the withdrawal is underway; plan to return and complete the claim when it becomes available.</p></div>
+  </article>
+  <aside class="sd485350" aria-labelledby="related-head">
+    <div class="sb6706cb">
+      <h2 class="s59dbe52" id="related-head">Related stories</h2>
+      <ul class="s14292bf">
+        <li class="scee9363"><a class="sfa1701d" href="/polygon-bridge-how-moving-tokens-from-your-wallet-works/">Polygon Bridge: How Moving Tokens From Your Wallet Works</a></li>
+        <li class="scee9363"><a class="sfa1701d" href="/occ-sets-genius-act-rules-for-stablecoin-issuers/">OCC sets GENIUS Act rules for stablecoin issuers</a></li>
+        <li class="scee9363"><a class="sfa1701d" href="/mantle-bridge-choose-a-route-by-asset-cost-and-exit-time/">Mantle Bridge: Choose a Route by Asset, Cost and Exit Time</a></li>
+        <li class="scee9363"><a class="sfa1701d" href="/four-choices-when-a-bungee-bridge-sends-to-another-wallet/">Four choices when a bungee bridge sends to another wallet</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+</main>
+
+<footer class="sc0e772d">
+  <div class="s0d7ea57 sd2a4f99">
+    <p class="s3611218">Onchain Report</p>
+    <nav class="sf5cde87" aria-label="Site">
+      <ul>
+<li><a href="/">Front page</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy policy</a></li><li><a href="/archive/">All articles</a></li><li><a href="/editorial-standards/">Editorial standards</a></li>      </ul>
+    </nav>
+    <p class="s27ddc34">News and analysis for information, not financial advice.</p>
+    <p class="s6c834f8">© 2026 Onchain Report</p>
+  </div>
+</footer>
+</body>
+</html>
