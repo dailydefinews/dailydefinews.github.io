@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en-GB" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What a Wallet Signature Lets a dApp Do With Tokens</title>
+<meta name="description" content="What does a wallet signature request allow a dApp to do? A login proves ownership; a permit can set token allowance, so read spender, value and deadline.">
+<link rel="canonical" href="https://dailydefinews.github.io/wallet-signature-requests-what-can-a-dapp-do/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#eef2f8">
+<meta name="author" content="Onchain Report Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Onchain Report">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Wallet signature requests: What can a dApp do?">
+<meta property="og:description" content="What does a wallet signature request allow a dApp to do? A login proves ownership; a permit can set token allowance, so read spender, value and deadline.">
+<meta property="og:url" content="https://dailydefinews.github.io/wallet-signature-requests-what-can-a-dapp-do/">
+<meta property="og:image" content="https://dailydefinews.github.io/assets/covers/wallet-signature-requests-what-can-a-dapp-do-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Wallet signature requests: What can a dApp do?"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wallet signature requests: What can a dApp do?">
+<meta name="twitter:description" content="What does a wallet signature request allow a dApp to do? A login proves ownership; a permit can set token allowance, so read spender, value and deadline.">
+<meta property="article:published_time" content="2026-11-19T19:06:04+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&amp;family=Public+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s6b5a710feb.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Onchain Report" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dailydefinews.github.io/#org",
+      "name": "Onchain Report",
+      "url": "https://dailydefinews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailydefinews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailydefinews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://dailydefinews.github.io/editorial-standards/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailydefinews.github.io/#website",
+      "name": "Onchain Report",
+      "url": "https://dailydefinews.github.io/",
+      "publisher": {
+        "@id": "https://dailydefinews.github.io/#org"
+      },
+      "inLanguage": "en-GB",
+      "description": "Crypto news on Bitcoin, Ethereum, DeFi, stablecoins, exchanges, regulation, security incidents and network upgrades across the blockchain industry."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dailydefinews.github.io/wallet-signature-requests-what-can-a-dapp-do/#webpage",
+      "url": "https://dailydefinews.github.io/wallet-signature-requests-what-can-a-dapp-do/",
+      "name": "What a Wallet Signature Lets a dApp Do With Tokens",
+      "isPartOf": {
+        "@id": "https://dailydefinews.github.io/#website"
+      },
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailydefinews.github.io/wallet-signature-requests-what-can-a-dapp-do/#article",
+      "headline": "Wallet signature requests: What can a dApp do?",
+      "isAccessibleForFree": true,
+      "description": "What does a wallet signature request allow a dApp to do? A login proves ownership; a permit can set token allowance, so read spender, value and deadline.",
+      "datePublished": "2026-11-19T19:06:04+00:00",
+      "dateModified": "2026-11-19T19:06:04+00:00",
+      "url": "https://dailydefinews.github.io/wallet-signature-requests-what-can-a-dapp-do/",
+      "mainEntityOfPage": {
+        "@id": "https://dailydefinews.github.io/wallet-signature-requests-what-can-a-dapp-do/#webpage"
+      },
+      "inLanguage": "en-GB",
+      "author": {
+        "@id": "https://dailydefinews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailydefinews.github.io/#org"
+      },
+      "wordCount": 482,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailydefinews.github.io/assets/covers/wallet-signature-requests-what-can-a-dapp-do-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailydefinews.github.io/assets/covers/wallet-signature-requests-what-can-a-dapp-do-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailydefinews.github.io/assets/covers/wallet-signature-requests-what-can-a-dapp-do-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailydefinews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Wallet signature requests: What can a dApp do?",
+          "item": "https://dailydefinews.github.io/wallet-signature-requests-what-can-a-dapp-do/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s0789f53" href="#main">Jump to content</a>
+<header class="s2f1f307">
+  <div class="s0d7ea57 sf25d9ba">
+    <a class="s05af5c4" href="/">Onchain Report</a>
+    <p class="s0368f98">Crypto news from every chain</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="s0d7ea57 s535bc5a">
+  <article class="s59e3d17">
+    <header class="s3960882">
+      <h1 class="s10ee023">Wallet signature requests: What can a dApp do?</h1>
+<p class="s041fe79">What does a wallet signature request allow a dApp to do? A login proves ownership; a permit can set token allowance, so read spender, value and deadline.</p>      <p class="sc97e52d s4546892"><span class="s7f903eb">Onchain Report Newsroom</span><time datetime="2026-11-19T19:06:04+00:00">Nov 19, 2026 · 19:06 UTC</time><span class="s28327f4">#8ff937</span><span>3 min read</span></p>
+    </header>
+    <figure class="s93e51ec">
+      <img width="1200" height="630" fetchpriority="high" class="sd914c85" src="/assets/covers/wallet-signature-requests-what-can-a-dapp-do.jpg" alt="Wallet signature requests: What can a dApp do?">
+    </figure>
+    <div class="s92c11ae"><p>A wallet signature request lets a dApp prove you own an address or, with a token permit, authorize a spender to move tokens. Signatures are free and off-chain, but a contract that accepts a permit treats it as your approval.</p>
+<h2>The signed data determines what the dApp can do</h2>
+<p>A wallet signs data, then the receiving app or contract uses it according to its format. The signature itself sends no transaction. These three request types have different effects:</p>
+<ul>
+<li><strong>Login message:</strong> A readable EIP-4361 message, also called Sign-In with Ethereum (SIWE), or a <em>personal_sign</em> request proves you control the address. It does not approve token spending or move funds.</li>
+<li><strong>Typed-data permit:</strong> EIP-2612 lets an ERC-20 token accept an EIP-712 signature to set an allowance. The named spender can then move tokens within that allowance without another approval transaction.</li>
+<li><strong>Blind hash:</strong> An <em>eth_sign</em> request or unreadable hex hides what you are signing. Do not sign it: it can authorize any transaction.</li>
+</ul>
+<p>For a permit, read the spender, value, nonce and deadline. The spender is the address allowed to use the tokens; the value is the limit. A value equal to the maximum uint means unlimited allowance. The nonce is a one-use number, and the deadline sets when the permit expires. Permit2 is another system that uses signatures for token permissions, so read its typed-data fields too.</p>
+<h2>A permit can stay invisible until someone submits it</h2>
+<p>Say you are removing liquidity from Fraxswap. Fraxswap pair LP tokens support permit. The <a href="https://telegra.ph/How-Does-Slippage-Work-on-Fraxswap-Price-Impact-and-Limits-11-17" rel="noopener">Fraxswap</a> Router can use that signature to remove liquidity without a separate approval transaction.</p>
+<p>The sequence matters: your wallet signs typed data, then the spender submits that signature to the token contract. The contract checks the signature and its nonce and deadline, then sets the allowance. Only after submission does the permit appear on-chain, where the spender can use the allowance to move tokens.</p>
+<p>A signed permit leaves no on-chain trace until the spender submits it, so it will not appear in your transaction history while it is waiting. To cancel it before its deadline, a transaction must use or invalidate its nonce. That cancellation costs gas. Fraxswap’s permit flow shows why a signature can save an approval step while still granting a real token permission.</p>
+<h2>Related</h2>
+<h3>Can a dApp take my tokens if I only connect my wallet?</h3>
+<p>Connecting alone does not authorize token transfers. A login signature proves address ownership; a permit or on-chain approval can grant a spender permission to move tokens.</p>
+<h3>How do I revoke a token approval I already gave?</h3>
+<p>Use a token approval manager or the token’s supported method to set the spender’s allowance to zero. Revoking an on-chain approval takes a gas-paying transaction. For a signed permit that has not been submitted, invalidate its nonce before the deadline. Before clicking Sign, confirm whether the request is a login or a permit, then check the spender, value and deadline.</p></div>
+  </article>
+  <aside class="sd485350" aria-labelledby="related-head">
+    <div class="sb6706cb">
+      <h2 class="s59dbe52" id="related-head">Related stories</h2>
+      <ul class="s14292bf">
+        <li class="scee9363"><a class="sfa1701d" href="/liquidity-pools-show-how-token-swaps-set-prices/">Liquidity pools show how token swaps set prices</a></li>
+        <li class="scee9363"><a class="sfa1701d" href="/defi-lending-liquidation-debt-repayment-and-collateral/">DeFi Lending Liquidation: Debt Repayment and Collateral</a></li>
+        <li class="scee9363"><a class="sfa1701d" href="/ethereum-confirmations-and-sui-checkpoints-what-each-tells-you/">Ethereum confirmations and Sui checkpoints: What each tells you</a></li>
+        <li class="scee9363"><a class="sfa1701d" href="/matcha-swap-slippage-and-the-minimum-output-floor/">Matcha swap slippage and the minimum-output floor</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+</main>
+
+<footer class="sc0e772d">
+  <div class="s0d7ea57 sd2a4f99">
+    <p class="s3611218">Onchain Report</p>
+    <nav class="sf5cde87" aria-label="Site">
+      <ul>
+<li><a href="/">Front page</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy policy</a></li><li><a href="/archive/">All articles</a></li><li><a href="/editorial-standards/">Editorial standards</a></li>      </ul>
+    </nav>
+    <p class="s27ddc34">News and analysis for information, not financial advice.</p>
+    <p class="s6c834f8">© 2026 Onchain Report</p>
+  </div>
+</footer>
+</body>
+</html>
