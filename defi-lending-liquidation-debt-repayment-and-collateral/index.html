@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en-GB" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How does liquidation work in DeFi lending? The outcome</title>
+<meta name="description" content="How does liquidation work in DeFi lending? A liquidator repays eligible debt and takes collateral with a bonus, restoring coverage while exposure may remain.">
+<link rel="canonical" href="https://dailydefinews.github.io/defi-lending-liquidation-debt-repayment-and-collateral/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#eef2f8">
+<meta name="author" content="Onchain Report Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Onchain Report">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="DeFi Lending Liquidation: Debt Repayment and Collateral">
+<meta property="og:description" content="How does liquidation work in DeFi lending? A liquidator repays eligible debt and takes collateral with a bonus, restoring coverage while exposure may remain.">
+<meta property="og:url" content="https://dailydefinews.github.io/defi-lending-liquidation-debt-repayment-and-collateral/">
+<meta property="og:image" content="https://dailydefinews.github.io/assets/covers/defi-lending-liquidation-debt-repayment-and-collateral-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DeFi Lending Liquidation: Debt Repayment and Collateral"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DeFi Lending Liquidation: Debt Repayment and Collateral">
+<meta name="twitter:description" content="How does liquidation work in DeFi lending? A liquidator repays eligible debt and takes collateral with a bonus, restoring coverage while exposure may remain.">
+<meta property="article:published_time" content="2026-11-19T06:36:16+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&amp;family=Public+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s6b5a710feb.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Onchain Report" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dailydefinews.github.io/#org",
+      "name": "Onchain Report",
+      "url": "https://dailydefinews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailydefinews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailydefinews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://dailydefinews.github.io/editorial-standards/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailydefinews.github.io/#website",
+      "name": "Onchain Report",
+      "url": "https://dailydefinews.github.io/",
+      "publisher": {
+        "@id": "https://dailydefinews.github.io/#org"
+      },
+      "inLanguage": "en-GB",
+      "description": "Crypto news on Bitcoin, Ethereum, DeFi, stablecoins, exchanges, regulation, security incidents and network upgrades across the blockchain industry."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dailydefinews.github.io/defi-lending-liquidation-debt-repayment-and-collateral/#webpage",
+      "url": "https://dailydefinews.github.io/defi-lending-liquidation-debt-repayment-and-collateral/",
+      "name": "How does liquidation work in DeFi lending? The outcome",
+      "isPartOf": {
+        "@id": "https://dailydefinews.github.io/#website"
+      },
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailydefinews.github.io/defi-lending-liquidation-debt-repayment-and-collateral/#article",
+      "headline": "DeFi Lending Liquidation: Debt Repayment and Collateral",
+      "isAccessibleForFree": true,
+      "description": "How does liquidation work in DeFi lending? A liquidator repays eligible debt and takes collateral with a bonus, restoring coverage while exposure may remain.",
+      "datePublished": "2026-11-19T06:36:16+00:00",
+      "dateModified": "2026-11-19T06:36:16+00:00",
+      "url": "https://dailydefinews.github.io/defi-lending-liquidation-debt-repayment-and-collateral/",
+      "mainEntityOfPage": {
+        "@id": "https://dailydefinews.github.io/defi-lending-liquidation-debt-repayment-and-collateral/#webpage"
+      },
+      "inLanguage": "en-GB",
+      "author": {
+        "@id": "https://dailydefinews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailydefinews.github.io/#org"
+      },
+      "wordCount": 372,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailydefinews.github.io/assets/covers/defi-lending-liquidation-debt-repayment-and-collateral-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailydefinews.github.io/assets/covers/defi-lending-liquidation-debt-repayment-and-collateral-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailydefinews.github.io/assets/covers/defi-lending-liquidation-debt-repayment-and-collateral-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailydefinews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "DeFi Lending Liquidation: Debt Repayment and Collateral",
+          "item": "https://dailydefinews.github.io/defi-lending-liquidation-debt-repayment-and-collateral/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s0789f53" href="#main">Jump to content</a>
+<header class="s2f1f307">
+  <div class="s0d7ea57 sf25d9ba">
+    <a class="s05af5c4" href="/">Onchain Report</a>
+    <p class="s0368f98">Crypto news from every chain</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="s0d7ea57 s535bc5a">
+  <article class="s59e3d17">
+    <header class="s3960882">
+      <h1 class="s10ee023">DeFi Lending Liquidation: Debt Repayment and Collateral</h1>
+<p class="s041fe79">How does liquidation work in DeFi lending? A liquidator repays eligible debt and takes collateral with a bonus, restoring coverage while exposure may remain.</p>      <p class="sc97e52d s4546892"><span class="s7f903eb">Onchain Report Newsroom</span><time datetime="2026-11-19T06:36:16+00:00">Nov 19, 2026 · 06:36 UTC</time><span class="s28327f4">#5007e2</span><span>2 min read</span></p>
+    </header>
+    <figure class="s93e51ec">
+      <img width="1200" height="630" fetchpriority="high" class="sd914c85" src="/assets/covers/defi-lending-liquidation-debt-repayment-and-collateral.jpg" alt="DeFi Lending Liquidation: Debt Repayment and Collateral">
+    </figure>
+    <div class="s92c11ae"><p>DeFi lending liquidation lets a liquidator repay some or all of an eligible borrower’s debt and take collateral plus a bonus. It rewards restoring lender coverage when collateral no longer adequately covers the debt.</p>
+<p>To see how liquidation works, follow the health factor, the repayment and collateral transfer, and the debt that remains afterward.</p>
+<h2>How liquidation works</h2>
+<p>An oracle values a borrower’s collateral and debt to calculate the health factor: collateral value multiplied by the market’s liquidation threshold, divided by debt value. Below 1, the position can be liquidated. A fall in collateral prices or a rise in debt value can push the factor below that point.</p>
+<p>A liquidator repays eligible debt, and the protocol transfers collateral worth more than the amount repaid. That extra value is the liquidation bonus, which rewards the liquidator. The bonus and the amount repayable in one call depend on market rules.</p>
+<p>A lending market lets users supply collateral and borrow other listed assets against it. <a href="https://paragraph.com/@citic92495/how-does-sparklend-work-supply-debt-and-liquidation" rel="noopener">SparkLend</a> adds a practical setting for checking health and taking steps such as repaying debt or adding collateral.</p>
+<h3>An illustrative position before and after liquidation</h3>
+<p>Imagine a position with $10,000 of collateral, $8,000 of debt and a 75% liquidation threshold. Its health factor is $10,000 × 0.75 ÷ $8,000, or 0.9375, so it is eligible for liquidation.</p>
+<p>Suppose a liquidator repays $1,000 and receives $1,050 worth of collateral, including a 5% bonus. Afterward, the same position has $8,950 of collateral and $7,000 of debt. Its health factor is about 0.959. The borrower still has collateral and debt, and the position remains below 1.</p>
+<p>The close factor sets how much debt can be repaid in one liquidation call. Because this partial liquidation leaves the health factor below 1, another call may be allowed, subject to the market’s limits. Remaining debt keeps accruing, so the borrower’s exposure continues and further liquidations may follow. A liquidation can therefore remove part or, where rules allow, all of a position.</p>
+<h2>Related questions</h2>
+<h3>Can DeFi liquidation be reversed?</h3>
+<p>Finalized liquidations have no standard undo operation. The collateral transfer and debt repayment have already changed the position.</p>
+<h3>Are liquidation bots always profitable?</h3>
+<p>No. Gas, competition and the cost of selling collateral affect whether a liquidation earns a profit.</p></div>
+  </article>
+  <aside class="sd485350" aria-labelledby="related-head">
+    <div class="sb6706cb">
+      <h2 class="s59dbe52" id="related-head">Related stories</h2>
+      <ul class="s14292bf">
+        <li class="scee9363"><a class="sfa1701d" href="/ethereum-confirmations-and-sui-checkpoints-what-each-tells-you/">Ethereum confirmations and Sui checkpoints: What each tells you</a></li>
+        <li class="scee9363"><a class="sfa1701d" href="/matcha-swap-slippage-and-the-minimum-output-floor/">Matcha swap slippage and the minimum-output floor</a></li>
+        <li class="scee9363"><a class="sfa1701d" href="/small-token-balances-to-eth-a-one-chain-sweep/">Small Token Balances to ETH: A One-Chain Sweep</a></li>
+        <li class="scee9363"><a class="sfa1701d" href="/difference-between-custodial-and-non-custodial-who-holds-keys/">Difference between custodial and non-custodial: who holds keys</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+</main>
+
+<footer class="sc0e772d">
+  <div class="s0d7ea57 sd2a4f99">
+    <p class="s3611218">Onchain Report</p>
+    <nav class="sf5cde87" aria-label="Site">
+      <ul>
+<li><a href="/">Front page</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy policy</a></li><li><a href="/archive/">All articles</a></li><li><a href="/editorial-standards/">Editorial standards</a></li>      </ul>
+    </nav>
+    <p class="s27ddc34">News and analysis for information, not financial advice.</p>
+    <p class="s6c834f8">© 2026 Onchain Report</p>
+  </div>
+</footer>
+</body>
+</html>
