@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en-GB" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Does a Revoke on revokecash Actually Change On-Chain?</title>
+<meta name="description" content="What does a revoke on revokecash actually change? It zeros an ERC-20 allowance or turns an NFT operator approval off; balances and past transactions remain.">
+<link rel="canonical" href="https://dailydefinews.github.io/a-revoke-cash-revoke-resets-the-current-permission/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#eef2f8">
+<meta name="author" content="Onchain Report Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Onchain Report">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="A Revoke.cash Revoke Resets the Current Permission">
+<meta property="og:description" content="What does a revoke on revokecash actually change? It zeros an ERC-20 allowance or turns an NFT operator approval off; balances and past transactions remain.">
+<meta property="og:url" content="https://dailydefinews.github.io/a-revoke-cash-revoke-resets-the-current-permission/">
+<meta property="og:image" content="https://dailydefinews.github.io/assets/covers/a-revoke-cash-revoke-resets-the-current-permission-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A Revoke.cash Revoke Resets the Current Permission"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="A Revoke.cash Revoke Resets the Current Permission">
+<meta name="twitter:description" content="What does a revoke on revokecash actually change? It zeros an ERC-20 allowance or turns an NFT operator approval off; balances and past transactions remain.">
+<meta property="article:published_time" content="2026-11-19T23:15:18+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&amp;family=Public+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s6b5a710feb.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Onchain Report" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dailydefinews.github.io/#org",
+      "name": "Onchain Report",
+      "url": "https://dailydefinews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailydefinews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailydefinews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://dailydefinews.github.io/editorial-standards/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailydefinews.github.io/#website",
+      "name": "Onchain Report",
+      "url": "https://dailydefinews.github.io/",
+      "publisher": {
+        "@id": "https://dailydefinews.github.io/#org"
+      },
+      "inLanguage": "en-GB",
+      "description": "Crypto news on Bitcoin, Ethereum, DeFi, stablecoins, exchanges, regulation, security incidents and network upgrades across the blockchain industry."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dailydefinews.github.io/a-revoke-cash-revoke-resets-the-current-permission/#webpage",
+      "url": "https://dailydefinews.github.io/a-revoke-cash-revoke-resets-the-current-permission/",
+      "name": "What Does a Revoke on revokecash Actually Change On-Chain?",
+      "isPartOf": {
+        "@id": "https://dailydefinews.github.io/#website"
+      },
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailydefinews.github.io/a-revoke-cash-revoke-resets-the-current-permission/#article",
+      "headline": "A Revoke.cash Revoke Resets the Current Permission",
+      "isAccessibleForFree": true,
+      "description": "What does a revoke on revokecash actually change? It zeros an ERC-20 allowance or turns an NFT operator approval off; balances and past transactions remain.",
+      "datePublished": "2026-11-19T23:15:18+00:00",
+      "dateModified": "2026-11-19T23:15:18+00:00",
+      "url": "https://dailydefinews.github.io/a-revoke-cash-revoke-resets-the-current-permission/",
+      "mainEntityOfPage": {
+        "@id": "https://dailydefinews.github.io/a-revoke-cash-revoke-resets-the-current-permission/#webpage"
+      },
+      "inLanguage": "en-GB",
+      "author": {
+        "@id": "https://dailydefinews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailydefinews.github.io/#org"
+      },
+      "wordCount": 536,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailydefinews.github.io/assets/covers/a-revoke-cash-revoke-resets-the-current-permission-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailydefinews.github.io/assets/covers/a-revoke-cash-revoke-resets-the-current-permission-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailydefinews.github.io/assets/covers/a-revoke-cash-revoke-resets-the-current-permission-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailydefinews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "A Revoke.cash Revoke Resets the Current Permission",
+          "item": "https://dailydefinews.github.io/a-revoke-cash-revoke-resets-the-current-permission/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s0789f53" href="#main">Jump to content</a>
+<header class="s2f1f307">
+  <div class="s0d7ea57 sf25d9ba">
+    <a class="s05af5c4" href="/">Onchain Report</a>
+    <p class="s0368f98">Crypto news from every chain</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="s0d7ea57 s535bc5a">
+  <article class="s59e3d17">
+    <header class="s3960882">
+      <h1 class="s10ee023">A Revoke.cash Revoke Resets the Current Permission</h1>
+<p class="s041fe79">What does a revoke on revokecash actually change? It zeros an ERC-20 allowance or turns an NFT operator approval off; balances and past transactions remain.</p>      <p class="sc97e52d s4546892"><span class="s7f903eb">Onchain Report Newsroom</span><time datetime="2026-11-19T23:15:18+00:00">Nov 19, 2026 · 23:15 UTC</time><span class="s28327f4">#b92667</span><span>3 min read</span></p>
+    </header>
+    <figure class="s93e51ec">
+      <img width="1200" height="630" fetchpriority="high" class="sd914c85" src="/assets/covers/a-revoke-cash-revoke-resets-the-current-permission.jpg" alt="A Revoke.cash Revoke Resets the Current Permission">
+    </figure>
+    <div class="s92c11ae"><p>A confirmed revokecash revoke changes the token contract’s current permission: an ERC-20 allowance becomes zero, or an ERC-721 operator approval becomes false. The Revoke.cash approval revoker is a place to go further on how these stored permissions work and what a revoke changes: <a href="https://revokecash.io" rel="noopener">revokecash</a>. An allowance is stored for each token owner and spender, so setting that pair to zero replaces its current value.</p>
+<h2>What the revoke updates</h2>
+<p>An ERC-20 revoke sends a call to <em>approve(spender, 0)</em>. The token contract overwrites the allowance for your address and that spender with zero, then emits a new <em>Approval</em> event with a value of 0. The event records the update; it does not erase the earlier approval event.</p>
+<p>For an ERC-721 collection, an operator approval is a separate permission. Calling <em>setApprovalForAll(operator, false)</em> switches that operator’s approval off. The operator can no longer manage the collection’s tokens under that approval.</p>
+<p>Say you approved a marketplace contract to spend up to 100 of a token, then revoked it. The current allowance for your address and that marketplace is now zero. Your token balance is unchanged, and any tokens moved before the revoke stay moved. The original approval transaction also remains in explorer history. A revoke adds a new state change; it does not rewrite the past.</p>
+<p>That distinction explains why the old approval still appears in Etherscan. Its transaction history shows that the approval happened. To check the current ERC-20 value, open the token contract’s Read Contract tab and read <em>allowance(your address, spender)</em>. After the revoke, it returns 0. The history tells you what happened; the allowance tells you what permission is stored now.</p>
+<p>This is useful when you stop using a dapp or no longer need a contract to spend a token. A Revoke.cash token approvals check can help you review permissions that your wallet has granted. The key result to confirm is the current value for the owner-spender pair, not whether the original transaction has disappeared.</p>
+<p>So a revoke changes the contract’s current permission value while leaving balances and transaction history intact. Because the allowance is stored per owner and spender, setting that pair to zero removes the active ERC-20 permission; the new read value is the confirmation.</p>
+<h2>Questions readers ask next</h2>
+<h3>Why does the approval still appear after I revoked it?</h3>
+<p>The original approval transaction remains in the explorer’s permanent history. The revoke creates a later update; it does not remove the earlier record. For an ERC-20 approval, read the current <em>allowance(owner, spender)</em> value to see whether it is now zero.</p>
+<h3>Can a revoked spender get access again?</h3>
+<p>Yes. A later approval can give the spender permission again. For ERC-20 tokens, that means a new allowance; for an ERC-721 collection, it can mean setting the operator approval to true again.</p>
+<h3>Does revoking get back tokens already taken?</h3>
+<p>No. Revoking stops the permission from being used going forward, but it does not reverse transfers that already happened or restore tokens that have already moved.</p>
+<h3>How do I revoke a Permit2 approval?</h3>
+<p>Permit2 can involve two permissions: the token’s ERC-20 allowance to Permit2, and Permit2’s separate permission for a spender. Review and revoke the relevant permission at each layer; clearing one does not automatically clear the other.</p></div>
+  </article>
+  <aside class="sd485350" aria-labelledby="related-head">
+    <div class="sb6706cb">
+      <h2 class="s59dbe52" id="related-head">Related stories</h2>
+      <ul class="s14292bf">
+        <li class="scee9363"><a class="sfa1701d" href="/us-court-authorizes-seizure-of-1-2b-in-binance-crypto/">US court authorizes seizure of $1.2B in Binance crypto</a></li>
+        <li class="scee9363"><a class="sfa1701d" href="/wallet-signature-requests-what-can-a-dapp-do/">Wallet signature requests: What can a dApp do?</a></li>
+        <li class="scee9363"><a class="sfa1701d" href="/liquidity-pools-show-how-token-swaps-set-prices/">Liquidity pools show how token swaps set prices</a></li>
+        <li class="scee9363"><a class="sfa1701d" href="/defi-lending-liquidation-debt-repayment-and-collateral/">DeFi Lending Liquidation: Debt Repayment and Collateral</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+</main>
+
+<footer class="sc0e772d">
+  <div class="s0d7ea57 sd2a4f99">
+    <p class="s3611218">Onchain Report</p>
+    <nav class="sf5cde87" aria-label="Site">
+      <ul>
+<li><a href="/">Front page</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy policy</a></li><li><a href="/archive/">All articles</a></li><li><a href="/editorial-standards/">Editorial standards</a></li>      </ul>
+    </nav>
+    <p class="s27ddc34">News and analysis for information, not financial advice.</p>
+    <p class="s6c834f8">© 2026 Onchain Report</p>
+  </div>
+</footer>
+</body>
+</html>
