@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en-GB" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to set slippage tolerance for safer swaps</title>
+<meta name="description" content="How to set slippage tolerance to reduce sandwich attack risk: choose a narrow floor that allows ordinary quote movement while limiting how far a swap can worsen before it reverts.">
+<link rel="canonical" href="https://dailydefinews.github.io/slippage-tolerance-set-a-safer-swap-floor/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#eef2f8">
+<meta name="author" content="Onchain Report Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Onchain Report">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Slippage Tolerance: Set a Safer Swap Floor">
+<meta property="og:description" content="How to set slippage tolerance to reduce sandwich attack risk: choose a narrow floor that allows ordinary quote movement while limiting how far a swap can worsen before it reverts.">
+<meta property="og:url" content="https://dailydefinews.github.io/slippage-tolerance-set-a-safer-swap-floor/">
+<meta property="og:image" content="https://dailydefinews.github.io/assets/covers/slippage-tolerance-set-a-safer-swap-floor-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Slippage Tolerance: Set a Safer Swap Floor"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Slippage Tolerance: Set a Safer Swap Floor">
+<meta name="twitter:description" content="How to set slippage tolerance to reduce sandwich attack risk: choose a narrow floor that allows ordinary quote movement while limiting how far a swap can worsen before it reverts.">
+<meta property="article:published_time" content="2026-11-22T18:37:12+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&amp;family=Public+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s6b5a710feb.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Onchain Report" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dailydefinews.github.io/#org",
+      "name": "Onchain Report",
+      "url": "https://dailydefinews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailydefinews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailydefinews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://dailydefinews.github.io/editorial-standards/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailydefinews.github.io/#website",
+      "name": "Onchain Report",
+      "url": "https://dailydefinews.github.io/",
+      "publisher": {
+        "@id": "https://dailydefinews.github.io/#org"
+      },
+      "inLanguage": "en-GB",
+      "description": "Crypto news on Bitcoin, Ethereum, DeFi, stablecoins, exchanges, regulation, security incidents and network upgrades across the blockchain industry."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dailydefinews.github.io/slippage-tolerance-set-a-safer-swap-floor/#webpage",
+      "url": "https://dailydefinews.github.io/slippage-tolerance-set-a-safer-swap-floor/",
+      "name": "How to set slippage tolerance for safer swaps",
+      "isPartOf": {
+        "@id": "https://dailydefinews.github.io/#website"
+      },
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailydefinews.github.io/slippage-tolerance-set-a-safer-swap-floor/#article",
+      "headline": "Slippage Tolerance: Set a Safer Swap Floor",
+      "isAccessibleForFree": true,
+      "description": "How to set slippage tolerance to reduce sandwich attack risk: choose a narrow floor that allows ordinary quote movement while limiting how far a swap can worsen before it reverts.",
+      "datePublished": "2026-11-22T18:37:12+00:00",
+      "dateModified": "2026-11-22T18:37:12+00:00",
+      "url": "https://dailydefinews.github.io/slippage-tolerance-set-a-safer-swap-floor/",
+      "mainEntityOfPage": {
+        "@id": "https://dailydefinews.github.io/slippage-tolerance-set-a-safer-swap-floor/#webpage"
+      },
+      "inLanguage": "en-GB",
+      "author": {
+        "@id": "https://dailydefinews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailydefinews.github.io/#org"
+      },
+      "wordCount": 457,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailydefinews.github.io/assets/covers/slippage-tolerance-set-a-safer-swap-floor-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailydefinews.github.io/assets/covers/slippage-tolerance-set-a-safer-swap-floor-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailydefinews.github.io/assets/covers/slippage-tolerance-set-a-safer-swap-floor-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailydefinews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Slippage Tolerance: Set a Safer Swap Floor",
+          "item": "https://dailydefinews.github.io/slippage-tolerance-set-a-safer-swap-floor/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s0789f53" href="#main">Jump to content</a>
+<header class="s2f1f307">
+  <div class="s0d7ea57 sf25d9ba">
+    <a class="s05af5c4" href="/">Onchain Report</a>
+    <p class="s0368f98">Crypto news from every chain</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="s0d7ea57 s535bc5a">
+  <article class="s59e3d17">
+    <header class="s3960882">
+      <h1 class="s10ee023">Slippage Tolerance: Set a Safer Swap Floor</h1>
+<p class="s041fe79">How to set slippage tolerance to reduce sandwich attack risk: choose a narrow floor that allows ordinary quote movement while limiting how far a swap can worsen before it reverts.</p>      <p class="sc97e52d s4546892"><span class="s7f903eb">Onchain Report Newsroom</span><time datetime="2026-11-22T18:37:12+00:00">Nov 22, 2026 · 18:37 UTC</time><span class="s28327f4">#036288</span><span>3 min read</span></p>
+    </header>
+    <figure class="s93e51ec">
+      <img width="1200" height="630" fetchpriority="high" class="sd914c85" src="/assets/covers/slippage-tolerance-set-a-safer-swap-floor.jpg" alt="Slippage Tolerance: Set a Safer Swap Floor">
+    </figure>
+    <div class="s92c11ae"><p>Slippage tolerance reduces sandwich attack risk by setting the lowest output your swap will accept, provided the price stays within that limit. The contract enforces this minimum output, so a worse fill beyond the limit makes the swap revert.</p>
+<p>On Matcha swap, the quote already reflects the estimated price impact of your trade. When your concern is exposure to a public mempool, compare that limit with <a href="https://dailydefinews.github.io/mev-protection-vs-slippage-tolerance-how-attacks-use-your-limit/">Matcha swap MEV protection options</a>: tolerance limits how much the fill can worsen, while MEV protection addresses attack exposure.</p>
+<h2>A 1% tolerance sets a 99-token floor</h2>
+<p>For a quote of 100 tokens at 1% tolerance, the minimum output is 99 tokens. The contract calculates that floor from the quoted output and the tolerance you select.</p>
+<p>Price impact is the quote’s estimated effect from your trade, such as the price moving as the trade uses available liquidity. Slippage tolerance is the extra movement allowed after that quote before the swap reverts. They are related, but they are not the same.</p>
+<p>Say you expect to receive 100 tokens and set tolerance to 1%. The expected price impact is already reflected in that 100-token quote. Adding the expected impact again as extra tolerance would lower your minimum output further than intended.</p>
+<p>A sandwich attacker places a trade before yours and another after it, moving the execution price against your swap. The minimum output bounds how far your fill can deteriorate: at a 99-token floor, the swap should revert rather than accept an output below 99 tokens.</p>
+<p>Think of the minimum output as a marked line on a scale: the swap can proceed above it, but crossing it stops the trade. The analogy only goes so far; the contract checks the output against a calculated value, not a physical scale.</p>
+<p>Choose a tolerance narrow enough to limit a worse fill, but wide enough to allow ordinary quote movement while your wallet confirms. Lower tolerance tightens the floor and may cause a revert during normal price changes. Higher tolerance makes execution easier, but gives the fill more room to worsen. On Matcha swap, set it against the movement you expect during confirmation, and do not add quoted price impact again.</p>
+<h2>What does slippage tolerance mean in a crypto swap?</h2>
+<p>Slippage tolerance is the maximum extra price movement your swap allows before it reverts. It sets the minimum output from the quote, so it defines the tradeoff between completing the swap and limiting a worse fill.</p>
+<h2>Why can a swap fail with low slippage tolerance?</h2>
+<p>A swap can fail with low slippage tolerance when the output falls below its minimum before execution. Ordinary price movement can cross that floor, even without an attack, so choose a setting that allows expected movement while keeping the floor meaningful.</p></div>
+  </article>
+  <aside class="sd485350" aria-labelledby="related-head">
+    <div class="sb6706cb">
+      <h2 class="s59dbe52" id="related-head">Related stories</h2>
+      <ul class="s14292bf">
+        <li class="scee9363"><a class="sfa1701d" href="/token-custody-during-a-routed-dex-swap/">Token custody during a routed DEX swap</a></li>
+        <li class="scee9363"><a class="sfa1701d" href="/how-does-a-solana-rug-pull-drain-a-liquidity-pool/">How does a Solana rug pull drain a liquidity pool?</a></li>
+        <li class="scee9363"><a class="sfa1701d" href="/polygon-publishes-heimdall-v0-14-0-after-purley-goes-live/">Polygon Publishes Heimdall v0.14.0 After Purley Goes Live</a></li>
+        <li class="scee9363"><a class="sfa1701d" href="/which-bridge-model-fits-multisig-validator-set-or-light-client/">Which bridge model fits: multisig, validator set or light client?</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+</main>
+
+<footer class="sc0e772d">
+  <div class="s0d7ea57 sd2a4f99">
+    <p class="s3611218">Onchain Report</p>
+    <nav class="sf5cde87" aria-label="Site">
+      <ul>
+<li><a href="/">Front page</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy policy</a></li><li><a href="/archive/">All articles</a></li><li><a href="/editorial-standards/">Editorial standards</a></li>      </ul>
+    </nav>
+    <p class="s27ddc34">News and analysis for information, not financial advice.</p>
+    <p class="s6c834f8">© 2026 Onchain Report</p>
+  </div>
+</footer>
+</body>
+</html>
