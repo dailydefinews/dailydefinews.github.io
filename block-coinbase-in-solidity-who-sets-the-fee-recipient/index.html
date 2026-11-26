@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en-GB" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Does block.coinbase Return? Fee Recipient Explained</title>
+<meta name="description" content="What does block.coinbase return in a smart contract? The current block’s payable fee-recipient address, which builders can receive through conditional payments.">
+<link rel="canonical" href="https://dailydefinews.github.io/block-coinbase-in-solidity-who-sets-the-fee-recipient/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#eef2f8">
+<meta name="author" content="Onchain Report Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Onchain Report">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Block.coinbase in Solidity: Who Sets the Fee Recipient">
+<meta property="og:description" content="What does block.coinbase return in a smart contract? The current block’s payable fee-recipient address, which builders can receive through conditional payments.">
+<meta property="og:url" content="https://dailydefinews.github.io/block-coinbase-in-solidity-who-sets-the-fee-recipient/">
+<meta property="og:image" content="https://dailydefinews.github.io/assets/covers/block-coinbase-in-solidity-who-sets-the-fee-recipient-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Block.coinbase in Solidity: Who Sets the Fee Recipient"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Block.coinbase in Solidity: Who Sets the Fee Recipient">
+<meta name="twitter:description" content="What does block.coinbase return in a smart contract? The current block’s payable fee-recipient address, which builders can receive through conditional payments.">
+<meta property="article:published_time" content="2026-11-26T10:41:34+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&amp;family=Public+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s6b5a710feb.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Onchain Report" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dailydefinews.github.io/#org",
+      "name": "Onchain Report",
+      "url": "https://dailydefinews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailydefinews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailydefinews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://dailydefinews.github.io/editorial-standards/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailydefinews.github.io/#website",
+      "name": "Onchain Report",
+      "url": "https://dailydefinews.github.io/",
+      "publisher": {
+        "@id": "https://dailydefinews.github.io/#org"
+      },
+      "inLanguage": "en-GB",
+      "description": "Crypto news on Bitcoin, Ethereum, DeFi, stablecoins, exchanges, regulation, security incidents and network upgrades across the blockchain industry."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dailydefinews.github.io/block-coinbase-in-solidity-who-sets-the-fee-recipient/#webpage",
+      "url": "https://dailydefinews.github.io/block-coinbase-in-solidity-who-sets-the-fee-recipient/",
+      "name": "What Does block.coinbase Return? Fee Recipient Explained",
+      "isPartOf": {
+        "@id": "https://dailydefinews.github.io/#website"
+      },
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailydefinews.github.io/block-coinbase-in-solidity-who-sets-the-fee-recipient/#article",
+      "headline": "Block.coinbase in Solidity: Who Sets the Fee Recipient",
+      "isAccessibleForFree": true,
+      "description": "What does block.coinbase return in a smart contract? The current block’s payable fee-recipient address, which builders can receive through conditional payments.",
+      "datePublished": "2026-11-26T10:41:34+00:00",
+      "dateModified": "2026-11-26T10:41:34+00:00",
+      "url": "https://dailydefinews.github.io/block-coinbase-in-solidity-who-sets-the-fee-recipient/",
+      "mainEntityOfPage": {
+        "@id": "https://dailydefinews.github.io/block-coinbase-in-solidity-who-sets-the-fee-recipient/#webpage"
+      },
+      "inLanguage": "en-GB",
+      "author": {
+        "@id": "https://dailydefinews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailydefinews.github.io/#org"
+      },
+      "wordCount": 422,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailydefinews.github.io/assets/covers/block-coinbase-in-solidity-who-sets-the-fee-recipient-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailydefinews.github.io/assets/covers/block-coinbase-in-solidity-who-sets-the-fee-recipient-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailydefinews.github.io/assets/covers/block-coinbase-in-solidity-who-sets-the-fee-recipient-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailydefinews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Block.coinbase in Solidity: Who Sets the Fee Recipient",
+          "item": "https://dailydefinews.github.io/block-coinbase-in-solidity-who-sets-the-fee-recipient/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s0789f53" href="#main">Jump to content</a>
+<header class="s2f1f307">
+  <div class="s0d7ea57 sf25d9ba">
+    <a class="s05af5c4" href="/">Onchain Report</a>
+    <p class="s0368f98">Crypto news from every chain</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="s0d7ea57 s535bc5a">
+  <article class="s59e3d17">
+    <header class="s3960882">
+      <h1 class="s10ee023">Block.coinbase in Solidity: Who Sets the Fee Recipient</h1>
+<p class="s041fe79">What does block.coinbase return in a smart contract? The current block’s payable fee-recipient address, which builders can receive through conditional payments.</p>      <p class="sc97e52d s4546892"><span class="s7f903eb">Onchain Report Newsroom</span><time datetime="2026-11-26T10:41:34+00:00">Nov 26, 2026 · 10:41 UTC</time><span class="s28327f4">#741a10</span><span>3 min read</span></p>
+    </header>
+    <figure class="s93e51ec">
+      <img width="1200" height="630" fetchpriority="high" class="sd914c85" src="/assets/covers/block-coinbase-in-solidity-who-sets-the-fee-recipient.jpg" alt="Block.coinbase in Solidity: Who Sets the Fee Recipient">
+    </figure>
+    <div class="s92c11ae"><p><code>block.coinbase</code> returns the payable address named as the current block’s beneficiary, or fee recipient. In Solidity, the value comes from the block header, so it is the same for every transaction in that block.</p>
+<p>Flashbots bundles helped popularize searcher contracts that pay this address only when a trade succeeds. For more on the infrastructure behind this flow, see the <a href="https://note.com/wise_okapi1657/n/n1d861a98c59f" rel="noopener">flashbots relay</a>.</p>
+<h2>Who sets the address, and why do contracts pay it?</h2>
+<p>The EVM’s <code>COINBASE</code> opcode reads the beneficiary address from the block header; Solidity exposes that value as <code>block.coinbase</code>, with type <code>address payable</code>. Here, “coinbase” is an old Ethereum term for the block beneficiary, not the Coinbase exchange.</p>
+<p>Since Ethereum’s Merge, the beneficiary field holds the fee recipient chosen by whoever built the block. With MEV-Boost, the builder commonly sets its own address there, then pays the validator in a final transaction. In that case, <code>block.coinbase</code> points to the builder, not the validator. Flashbots is a research and infrastructure organization involved in MEV—the value that can be extracted by reordering or including transactions.</p>
+<p>Say a searcher contract spots an arbitrage opportunity. It can perform the trade and end with <code>block.coinbase.transfer(x)</code>, sending an agreed payment to the block’s fee recipient. If the trade fails and the transaction reverts, the payment does not go through. This lets the searcher offer payment for inclusion while making it conditional on a successful result.</p>
+<p>Shanghai made access to this address cheaper. Under EIP-3651, the coinbase address is warm at the start of a transaction. A transfer to it therefore skips the 2,600-gas cold-access charge that would otherwise apply to a first access to a cold address.</p>
+<p>A common mistake is to treat <code>block.coinbase</code> as the validator’s fixed address and use it to identify who proposed the block. On a MEV-Boost block, the address may belong to the builder instead. Since the block producer chooses the beneficiary, it is also unsuitable as a source of security or randomness that contracts must trust.</p>
+<h2>Related</h2>
+<h3>How do you set block.coinbase in Foundry or Hardhat tests?</h3>
+<p>Set the coinbase value in the test environment, then check what your contract reads. Foundry provides the <a href="https://www.getfoundry.sh/reference/cheatcodes/environment#coinbase" rel="nofollow noopener">coinbase cheatcode</a>; Hardhat supports the <a href="https://hardhat.org/docs/reference/cheatcodes/environment/coinbase" rel="nofollow noopener">coinbase cheatcode</a> and a local-network setting for new blocks.</p>
+<h3>Can block.coinbase be used for access control or randomness?</h3>
+<p>A contract can compare <code>block.coinbase</code> with an address, but the block producer chooses that value, so it should not be treated as a trusted identity. It is also not a secure random value: a producer can influence the beneficiary address.</p></div>
+  </article>
+  <aside class="sd485350" aria-labelledby="related-head">
+    <div class="sb6706cb">
+      <h2 class="s59dbe52" id="related-head">Related stories</h2>
+      <ul class="s14292bf">
+        <li class="scee9363"><a class="sfa1701d" href="/polling-vs-webhooks-how-should-a-trading-bot-refresh-token-risk/">Polling vs webhooks: how should a trading bot refresh token risk?</a></li>
+        <li class="scee9363"><a class="sfa1701d" href="/how-do-you-calculate-net-dex-swap-output-tokens/">How Do You Calculate Net DEX Swap Output Tokens?</a></li>
+        <li class="scee9363"><a class="sfa1701d" href="/blind-signing-vs-clear-signing-what-the-prompt-shows/">Blind Signing vs Clear Signing: What the Prompt Shows</a></li>
+        <li class="scee9363"><a class="sfa1701d" href="/jpmorgan-hsbc-and-stonex-complete-digital-gold-trades/">JPMorgan, HSBC and StoneX complete digital gold trades</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+</main>
+
+<footer class="sc0e772d">
+  <div class="s0d7ea57 sd2a4f99">
+    <p class="s3611218">Onchain Report</p>
+    <nav class="sf5cde87" aria-label="Site">
+      <ul>
+<li><a href="/">Front page</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy policy</a></li><li><a href="/archive/">All articles</a></li><li><a href="/editorial-standards/">Editorial standards</a></li>      </ul>
+    </nav>
+    <p class="s27ddc34">News and analysis for information, not financial advice.</p>
+    <p class="s6c834f8">© 2026 Onchain Report</p>
+  </div>
+</footer>
+</body>
+</html>
