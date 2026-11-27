@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en-GB" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Is a Transaction Nonce in Ethereum? How It Works</title>
+<meta name="description" content="A transaction nonce in Ethereum is an account’s next number in sequence. Learn how it orders transactions, blocks later sends and helps replace a stuck one.">
+<link rel="canonical" href="https://dailydefinews.github.io/ethereum-transaction-nonces-and-transaction-order/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#eef2f8">
+<meta name="author" content="Onchain Report Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Onchain Report">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Ethereum transaction nonces and transaction order">
+<meta property="og:description" content="A transaction nonce in Ethereum is an account’s next number in sequence. Learn how it orders transactions, blocks later sends and helps replace a stuck one.">
+<meta property="og:url" content="https://dailydefinews.github.io/ethereum-transaction-nonces-and-transaction-order/">
+<meta property="og:image" content="https://dailydefinews.github.io/assets/covers/ethereum-transaction-nonces-and-transaction-order-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ethereum transaction nonces and transaction order"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ethereum transaction nonces and transaction order">
+<meta name="twitter:description" content="A transaction nonce in Ethereum is an account’s next number in sequence. Learn how it orders transactions, blocks later sends and helps replace a stuck one.">
+<meta property="article:published_time" content="2026-11-27T23:24:02+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&amp;family=Public+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s6b5a710feb.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Onchain Report" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dailydefinews.github.io/#org",
+      "name": "Onchain Report",
+      "url": "https://dailydefinews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailydefinews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailydefinews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://dailydefinews.github.io/editorial-standards/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailydefinews.github.io/#website",
+      "name": "Onchain Report",
+      "url": "https://dailydefinews.github.io/",
+      "publisher": {
+        "@id": "https://dailydefinews.github.io/#org"
+      },
+      "inLanguage": "en-GB",
+      "description": "Crypto news on Bitcoin, Ethereum, DeFi, stablecoins, exchanges, regulation, security incidents and network upgrades across the blockchain industry."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dailydefinews.github.io/ethereum-transaction-nonces-and-transaction-order/#webpage",
+      "url": "https://dailydefinews.github.io/ethereum-transaction-nonces-and-transaction-order/",
+      "name": "What Is a Transaction Nonce in Ethereum? How It Works",
+      "isPartOf": {
+        "@id": "https://dailydefinews.github.io/#website"
+      },
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailydefinews.github.io/ethereum-transaction-nonces-and-transaction-order/#article",
+      "headline": "Ethereum transaction nonces and transaction order",
+      "isAccessibleForFree": true,
+      "description": "A transaction nonce in Ethereum is an account’s next number in sequence. Learn how it orders transactions, blocks later sends and helps replace a stuck one.",
+      "datePublished": "2026-11-27T23:24:02+00:00",
+      "dateModified": "2026-11-27T23:24:02+00:00",
+      "url": "https://dailydefinews.github.io/ethereum-transaction-nonces-and-transaction-order/",
+      "mainEntityOfPage": {
+        "@id": "https://dailydefinews.github.io/ethereum-transaction-nonces-and-transaction-order/#webpage"
+      },
+      "inLanguage": "en-GB",
+      "author": {
+        "@id": "https://dailydefinews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailydefinews.github.io/#org"
+      },
+      "wordCount": 528,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailydefinews.github.io/assets/covers/ethereum-transaction-nonces-and-transaction-order-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailydefinews.github.io/assets/covers/ethereum-transaction-nonces-and-transaction-order-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailydefinews.github.io/assets/covers/ethereum-transaction-nonces-and-transaction-order-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailydefinews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Ethereum transaction nonces and transaction order",
+          "item": "https://dailydefinews.github.io/ethereum-transaction-nonces-and-transaction-order/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s0789f53" href="#main">Jump to content</a>
+<header class="s2f1f307">
+  <div class="s0d7ea57 sf25d9ba">
+    <a class="s05af5c4" href="/">Onchain Report</a>
+    <p class="s0368f98">Crypto news from every chain</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="s0d7ea57 s535bc5a">
+  <article class="s59e3d17">
+    <header class="s3960882">
+      <h1 class="s10ee023">Ethereum transaction nonces and transaction order</h1>
+<p class="s041fe79">A transaction nonce in Ethereum is an account’s next number in sequence. Learn how it orders transactions, blocks later sends and helps replace a stuck one.</p>      <p class="sc97e52d s4546892"><span class="s7f903eb">Onchain Report Newsroom</span><time datetime="2026-11-27T23:24:02+00:00">Nov 27, 2026 · 23:24 UTC</time><span class="s28327f4">#109126</span><span>3 min read</span></p>
+    </header>
+    <figure class="s93e51ec">
+      <img width="1200" height="630" fetchpriority="high" class="sd914c85" src="/assets/covers/ethereum-transaction-nonces-and-transaction-order.jpg" alt="Ethereum transaction nonces and transaction order">
+    </figure>
+    <div class="s92c11ae"><p>A transaction nonce in Ethereum is an account’s next number in sequence, and each transaction must use that number to execute in order.</p>
+<p>Think of it like numbered tickets: ticket 8 must be handled before ticket 9. An externally owned account (a wallet controlled by a person) starts at nonce 0. Each executed transaction adds 1. The nonce is not a fee or a balance; the Ethereum Yellow Paper defines it as a count tied to the sending account.</p>
+<h2>What does an Ethereum nonce count, and why can it hold up later transactions?</h2>
+<p>An account nonce counts transactions sent from that account and sets their execution order. Etherscan shows the nonce on each transaction page. Under EIP-161, a contract’s nonce starts at 1 and counts contracts it creates, so a contract account’s nonce has a different role.</p>
+<p>Say your wallet has a transaction at nonce 8 waiting because its fee is too low. A later transaction at nonce 9 cannot execute first, even if you offer a higher fee for it. The pending transaction holds up every later one from that address until nonce 8 is confirmed or replaced.</p>
+<p>This can happen when you approve a token before making a deposit. A Base bridge is a cross-chain service for moving supported crypto assets between Ethereum and Base. In that flow, a stuck approval at nonce N blocks the deposit at N+1 until the approval confirms or you replace it; the <a href="https://allenevkc429761.bcbloggers.com/42631636/how-does-the-base-bridge-work-end-to-end-transfer-stages" rel="noopener">Base bridge</a> is one example of where that order matters.</p>
+<p>Each chain tracks its own nonce. The same address can have one count on Ethereum and a separate count on Base. A transaction on one chain does not advance the other chain’s counter.</p>
+<h2>How do same-nonce replacements speed up or cancel a transaction?</h2>
+<p>A replacement uses the same nonce as the pending transaction and raises its fee enough for the node to accept it. “Speed up” and “cancel” both work this way: the wallet sends another transaction at the blocked nonce with higher fees. A cancellation is still a transaction; if it is accepted, it takes that nonce’s place.</p>
+<p>Geth’s default price bump is 10%. For an EIP-1559 transaction, raise both maxFeePerGas and maxPriorityFeePerGas by at least 10%. If both rise by that amount, Geth accepts the replacement under its default rule. If maxFeePerGas rises by 10% but maxPriorityFeePerGas stays the same, Geth rejects it as “replacement transaction underpriced.” The deciding factor is whether both fee fields meet the bump.</p>
+<h2>Related</h2>
+<h3>What does a “nonce too low” error mean?</h3>
+<p>It means the transaction’s nonce is below the account’s current nonce on that chain, often because a transaction with that number already executed. Check the account’s latest transactions on the right network before retrying.</p>
+<h3>How do I reset the nonce in MetaMask?</h3>
+<p>You cannot reset the on-chain counter in MetaMask. Its “clear activity and nonce data” option clears MetaMask’s local transaction history; it does not change the chain’s nonce or remove a pending transaction. For a stuck send, use speed up or cancel with the same nonce. Before sending anything else, compare the wallet’s pending nonce with the latest confirmed nonce to avoid adding another transaction behind the blockage.</p></div>
+  </article>
+  <aside class="sd485350" aria-labelledby="related-head">
+    <div class="sb6706cb">
+      <h2 class="s59dbe52" id="related-head">Related stories</h2>
+      <ul class="s14292bf">
+        <li class="scee9363"><a class="sfa1701d" href="/brale-takes-custom-stablecoin-issuance-live-on-cardano/">Brale takes custom stablecoin issuance live on Cardano</a></li>
+        <li class="scee9363"><a class="sfa1701d" href="/block-coinbase-in-solidity-who-sets-the-fee-recipient/">Block.coinbase in Solidity: Who Sets the Fee Recipient</a></li>
+        <li class="scee9363"><a class="sfa1701d" href="/polling-vs-webhooks-how-should-a-trading-bot-refresh-token-risk/">Polling vs webhooks: how should a trading bot refresh token risk?</a></li>
+        <li class="scee9363"><a class="sfa1701d" href="/how-do-you-calculate-net-dex-swap-output-tokens/">How Do You Calculate Net DEX Swap Output Tokens?</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+</main>
+
+<footer class="sc0e772d">
+  <div class="s0d7ea57 sd2a4f99">
+    <p class="s3611218">Onchain Report</p>
+    <nav class="sf5cde87" aria-label="Site">
+      <ul>
+<li><a href="/">Front page</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy policy</a></li><li><a href="/archive/">All articles</a></li><li><a href="/editorial-standards/">Editorial standards</a></li>      </ul>
+    </nav>
+    <p class="s27ddc34">News and analysis for information, not financial advice.</p>
+    <p class="s6c834f8">© 2026 Onchain Report</p>
+  </div>
+</footer>
+</body>
+</html>
