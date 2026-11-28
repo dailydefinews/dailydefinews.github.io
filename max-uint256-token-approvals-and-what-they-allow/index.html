@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en-GB" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Max uint256 Means in a Token Approval and Its Risk</title>
+<meta name="description" content="What does max uint256 mean in a token approval? It is the largest ERC-20 allowance, letting a spender move any amount of that token you hold, now or later.">
+<link rel="canonical" href="https://dailydefinews.github.io/max-uint256-token-approvals-and-what-they-allow/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#eef2f8">
+<meta name="author" content="Onchain Report Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Onchain Report">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Max uint256 Token Approvals and What They Allow">
+<meta property="og:description" content="What does max uint256 mean in a token approval? It is the largest ERC-20 allowance, letting a spender move any amount of that token you hold, now or later.">
+<meta property="og:url" content="https://dailydefinews.github.io/max-uint256-token-approvals-and-what-they-allow/">
+<meta property="og:image" content="https://dailydefinews.github.io/assets/covers/max-uint256-token-approvals-and-what-they-allow-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Max uint256 Token Approvals and What They Allow"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Max uint256 Token Approvals and What They Allow">
+<meta name="twitter:description" content="What does max uint256 mean in a token approval? It is the largest ERC-20 allowance, letting a spender move any amount of that token you hold, now or later.">
+<meta property="article:published_time" content="2026-11-28T20:47:18+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&amp;family=Public+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s6b5a710feb.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Onchain Report" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dailydefinews.github.io/#org",
+      "name": "Onchain Report",
+      "url": "https://dailydefinews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailydefinews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailydefinews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://dailydefinews.github.io/editorial-standards/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailydefinews.github.io/#website",
+      "name": "Onchain Report",
+      "url": "https://dailydefinews.github.io/",
+      "publisher": {
+        "@id": "https://dailydefinews.github.io/#org"
+      },
+      "inLanguage": "en-GB",
+      "description": "Crypto news on Bitcoin, Ethereum, DeFi, stablecoins, exchanges, regulation, security incidents and network upgrades across the blockchain industry."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dailydefinews.github.io/max-uint256-token-approvals-and-what-they-allow/#webpage",
+      "url": "https://dailydefinews.github.io/max-uint256-token-approvals-and-what-they-allow/",
+      "name": "What Max uint256 Means in a Token Approval and Its Risk",
+      "isPartOf": {
+        "@id": "https://dailydefinews.github.io/#website"
+      },
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailydefinews.github.io/max-uint256-token-approvals-and-what-they-allow/#article",
+      "headline": "Max uint256 Token Approvals and What They Allow",
+      "isAccessibleForFree": true,
+      "description": "What does max uint256 mean in a token approval? It is the largest ERC-20 allowance, letting a spender move any amount of that token you hold, now or later.",
+      "datePublished": "2026-11-28T20:47:18+00:00",
+      "dateModified": "2026-11-28T20:47:18+00:00",
+      "url": "https://dailydefinews.github.io/max-uint256-token-approvals-and-what-they-allow/",
+      "mainEntityOfPage": {
+        "@id": "https://dailydefinews.github.io/max-uint256-token-approvals-and-what-they-allow/#webpage"
+      },
+      "inLanguage": "en-GB",
+      "author": {
+        "@id": "https://dailydefinews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailydefinews.github.io/#org"
+      },
+      "wordCount": 513,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailydefinews.github.io/assets/covers/max-uint256-token-approvals-and-what-they-allow-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailydefinews.github.io/assets/covers/max-uint256-token-approvals-and-what-they-allow-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailydefinews.github.io/assets/covers/max-uint256-token-approvals-and-what-they-allow-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailydefinews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Max uint256 Token Approvals and What They Allow",
+          "item": "https://dailydefinews.github.io/max-uint256-token-approvals-and-what-they-allow/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s0789f53" href="#main">Jump to content</a>
+<header class="s2f1f307">
+  <div class="s0d7ea57 sf25d9ba">
+    <a class="s05af5c4" href="/">Onchain Report</a>
+    <p class="s0368f98">Crypto news from every chain</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="s0d7ea57 s535bc5a">
+  <article class="s59e3d17">
+    <header class="s3960882">
+      <h1 class="s10ee023">Max uint256 Token Approvals and What They Allow</h1>
+<p class="s041fe79">What does max uint256 mean in a token approval? It is the largest ERC-20 allowance, letting a spender move any amount of that token you hold, now or later.</p>      <p class="sc97e52d s4546892"><span class="s7f903eb">Onchain Report Newsroom</span><time datetime="2026-11-28T20:47:18+00:00">Nov 28, 2026 · 20:47 UTC</time><span class="s28327f4">#9bcf37</span><span>3 min read</span></p>
+    </header>
+    <figure class="s93e51ec">
+      <img width="1200" height="630" fetchpriority="high" class="sd914c85" src="/assets/covers/max-uint256-token-approvals-and-what-they-allow.jpg" alt="Max uint256 Token Approvals and What They Allow">
+    </figure>
+    <div class="s92c11ae"><p>A max uint256 token approval is the largest allowance an ERC-20 token can hold, allowing the approved spender to move any amount of that token in your wallet, now or later.</p>
+<ul>
+<li><strong>Maximum:</strong> 2<sup>256</sup> − 1, about 1.16 × 10<sup>77</sup> raw units.</li>
+<li><strong>Meaning:</strong> The spender can use the allowance for your whole balance of that token.</li>
+<li><strong>Risk:</strong> A compromised or malicious spender could take that balance.</li>
+</ul>
+<h2>Max uint256 lets a spender use your full token balance</h2>
+<p>uint256 is an unsigned number type that can hold values up to 2<sup>256</sup> − 1. That maximum is a 78-digit number, written in hexadecimal as 0x followed by 64 f’s. It is the same raw value regardless of a token’s decimals.</p>
+<p>Take an illustrative swap: you approve a router to spend USDC with a max uint256 allowance. The router can move all the USDC you hold, and any USDC you receive later, until the allowance changes. It is not limited to the amount needed for the first trade.</p>
+<p>Dapps often request this amount to avoid asking for another approval transaction on each later trade. That can save a separate transaction and its gas fee. But the approval gives the spender ongoing access to that token, so a contract exploit or malicious contract can put your whole balance at risk.</p>
+<p>Not every huge allowance equals uint256 max. Permit2 stores amounts as uint160, and treats type(uint160).max as an allowance that does not decrease when used. That value is below uint256 max, but is still effectively unlimited: it can cover far more tokens than you could hold. <a href="https://www.tumblr.com/futuristicquakeprototype/834429144349736960/which-approval-gets-your-first-revoke" rel="noopener">revokecash</a> tracks token approvals so wallet users can inspect allowances and manage them.</p>
+<p>Some tools label the exact maximum “Unlimited”; others display a long number. In revokecash, the allowance column shows “Unlimited” for the max value, with options to revoke it or edit it down. Etherscan Token Approval Checker and MetaMask can also help you review approvals. A long number may be an unlimited allowance even when it is not the uint256 maximum, as with Permit2.</p>
+<h2>Related</h2>
+<h3>Why do dapps ask for an unlimited approval?</h3>
+<p>Dapps use unlimited approvals to avoid asking you to approve each later trade in a separate transaction, which also avoids that transaction’s gas fee.</p>
+<h3>How does an unlimited approval appear in revokecash?</h3>
+<p>The allowance column shows “Unlimited” for the max value. You can revoke it or edit it down.</p>
+<h2>Questions about changing token approvals</h2>
+<h3>Do token approvals with the max value ever expire?</h3>
+<p>A max allowance does not expire just because time passes. It stays in place until it is changed or revoked, unless the token or contract has its own rules.</p>
+<h3>Is it safe to keep an unlimited approval for a well-known DEX?</h3>
+<p>A well-known name does not remove the allowance’s risk. The spender can still use the approved token balance, so keep the approval only if you are comfortable with that access.</p>
+<h3>Does editing an unlimited approval to a lower amount cost gas?</h3>
+<p>Changing an on-chain allowance requires a transaction, which usually costs gas. The exact cost depends on the network and current conditions.</p></div>
+  </article>
+  <aside class="sd485350" aria-labelledby="related-head">
+    <div class="sb6706cb">
+      <h2 class="s59dbe52" id="related-head">Related stories</h2>
+      <ul class="s14292bf">
+        <li class="scee9363"><a class="sfa1701d" href="/why-is-my-bridged-eth-balance-smaller-after-gas/">Why Is My Bridged ETH Balance Smaller After Gas?</a></li>
+        <li class="scee9363"><a class="sfa1701d" href="/coinbase-usdc-base-or-ethereum-before-bridging/">Coinbase USDC: Base or Ethereum before bridging?</a></li>
+        <li class="scee9363"><a class="sfa1701d" href="/how-to-track-a-solana-token-creator-wallet-through-its-history/">How to Track a Solana Token Creator Wallet Through Its History</a></li>
+        <li class="scee9363"><a class="sfa1701d" href="/how-to-pick-a-metamask-gas-preset-and-clear-a-stuck-transaction/">How to Pick a MetaMask Gas Preset and Clear a Stuck Transaction</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+</main>
+
+<footer class="sc0e772d">
+  <div class="s0d7ea57 sd2a4f99">
+    <p class="s3611218">Onchain Report</p>
+    <nav class="sf5cde87" aria-label="Site">
+      <ul>
+<li><a href="/">Front page</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy policy</a></li><li><a href="/archive/">All articles</a></li><li><a href="/editorial-standards/">Editorial standards</a></li>      </ul>
+    </nav>
+    <p class="s27ddc34">News and analysis for information, not financial advice.</p>
+    <p class="s6c834f8">© 2026 Onchain Report</p>
+  </div>
+</footer>
+</body>
+</html>
